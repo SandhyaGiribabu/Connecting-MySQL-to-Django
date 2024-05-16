@@ -19,5 +19,6 @@ from django.urls import path
 from. import view
 urlpatterns = [
    # path("admin/", admin.site.urls),
-   path('',view.Insertrecord)
+    path('welcome/', view.welcome_page, name='welcome_page'),
+    path('',view.Insertrecord)
 ]
